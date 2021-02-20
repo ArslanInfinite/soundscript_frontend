@@ -2,6 +2,8 @@ endPoint = 'http://localhost:3000/api/v1/users'
 
 document.addEventListener('DOMContentLoaded', () => {
  getUsers();
+
+ 
 })
 
 function getUsers() {fetch(endPoint)
@@ -11,9 +13,9 @@ function getUsers() {fetch(endPoint)
       const appendUser = `
       <div data-id=${user.id}>
         <h3>${user.attributes.name}</h3>
+        <h3>${user.relationships.keyboard.data.type}</h3>
       </div>
       `
-      console.log(user)
       document.querySelector('#users-container').innerHTML += appendUser
     });
   })
