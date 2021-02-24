@@ -5,26 +5,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-</head>
-<body>
-    <div class="piano">
-      <div class="key white" id="c"></div>
-      <div class="key black" id="cSharp"></div>
-      <div class="key white" id="d"></div>
-      <div class="key black" id="dSharp"></div>
-      <div class="key white" id="e"></div>
-      <div class="key white" id="f"></div>
-      <div class="key black" id="fSharp"></div>
-      <div class="key white" id="g"></div>
-      <div class="key black" id="gSharp"></div>
-      <div class="key white" id="a"></div>
-      <div class="key black" id="aSharp"></div>
-      <div class="key white" id="b"></div>
-    </div>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
   <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+
+  <form class="create-user-form">
+    <h3>New User</h3>
+    <input id="input-name" type="text" name="name" value="" placeholder="Enter Name"> 
+    <input type="submit" value="Submit">
+  </form>
+
+  <br>
+  
+  <form action="/action_page.php">
+    <label for="piano-selection">Choose Piano:</label>
+    <select name="piano-selection" id="piano-selection">
+      <option value="grand-piano">Grand Piano</option>
+      <option value="synth-piano">Synth Piano</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
 
   <div id="users-container">
-
+  </div>
+  
+  <br>
+  
+  <div class="piano">
+    <div class="key white" id="c"></div>
+    <div class="key black" id="cSharp"></div>
+    <div class="key white" id="d"></div>
+    <div class="key black" id="dSharp"></div>
+    <div class="key white" id="e"></div>
+    <div class="key white" id="f"></div>
+    <div class="key black" id="fSharp"></div>
+    <div class="key white" id="g"></div>
+    <div class="key black" id="gSharp"></div>
+    <div class="key white" id="a"></div>
+    <div class="key black" id="aSharp"></div>
+    <div class="key white" id="b"></div>
   </div>
 
   </body>
