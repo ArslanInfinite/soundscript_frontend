@@ -1,52 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+
+  
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-  <script type="text/javascript" src="index.js"></script>
+
 </head>
 
 <body>
+	<div class="dashboard">
+		<div class="user-container">
+			<button class="login">login </button>
+			<button class="register"> register</button>
+		</div>
+		<div class="select-container"  style="display: none" >
+			<label for="sounds">Choose a sound:</label>
+                                    <select class="selector" name="sounds" id="sounds">
+                                      <option value="1">Grand Piano</option>
+                                      <option value="2">Saw Synth</option>
+									  <option value="3">Voice</option>
+                                    </select >
+	</div>
+	</div>
+    <div class="keyboard"> 
 
-  <form class="create-user-form">
-    <h3>New User</h3>
-    <input id="input-name" type="text" name="name" value="" placeholder="Enter Name"> 
-    <input type="submit" value="Submit">
-  </form>
+	</div>
+</div>
+    <script  src="index.js"> </script>
+	<script src="src/user.js"> </script>
+	<script src="src/keyboard.js"> </script>
 
-  <br>
-  
-  <form action="/action_page.php">
-    <label for="piano-selection">Choose Piano:</label>
-    <select name="piano-selection" id="piano-selection">
-      <option value="grand-piano">Grand Piano</option>
-      <option value="synth-piano">Synth Piano</option>
-    </select>
-    <input type="submit" value="Submit">
-  </form>
-
-  <div id="users-container">
-  </div>
-  
-  <br>
-  
-  <div class="piano">
-    <div class="key white" id="c"></div>
-    <div class="key black" id="cSharp"></div>
-    <div class="key white" id="d"></div>
-    <div class="key black" id="dSharp"></div>
-    <div class="key white" id="e"></div>
-    <div class="key white" id="f"></div>
-    <div class="key black" id="fSharp"></div>
-    <div class="key white" id="g"></div>
-    <div class="key black" id="gSharp"></div>
-    <div class="key white" id="a"></div>
-    <div class="key black" id="aSharp"></div>
-    <div class="key white" id="b"></div>
-  </div>
-
-  </body>
+</body>
 </html>
